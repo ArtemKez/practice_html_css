@@ -342,7 +342,7 @@ body, html {
 }
 
 .card:first-child {
-    border: none;
+    border: 1px solid transparent;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -358,11 +358,11 @@ body, html {
 
 .card-h2 {
     font-weight: 500;
-    font-size: 15px;
+    font-size: 11px;
 }
 
 .card-p {
-    font-size: 11px;
+    font-size: 9.7px;
     line-height: 13px;
     color: #9D9D9D;
 }
@@ -496,7 +496,16 @@ body, html {
     margin: auto;
 }
 
-.footer1 {
+.flex-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #243246;
     color: var(--main-text-color1);
     padding: 20px;
@@ -506,20 +515,18 @@ body, html {
     display: flex;
 }
 
-.h2-column:first-child {
-    width: 40%;
+/*.h2-column:first-child {*/
+/*    width: 40%;*/
+/*}*/
+
+.h2-column {
+
 }
 
 .h2-column h2 {
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
-}
-
-.flex-position {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
 }
 
 .number-p {
@@ -548,8 +555,40 @@ body, html {
     color: var(--main-text-color1);
 }
 
-.footer2 {
-    display: none;
+.order1 {
+    order: 1;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.order2 {
+    order: 3;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+.order3 {
+    order: 2;
+    padding: 7px 0 0 0;
+}
+
+.order3 .flex-align-center p {
+    margin-top: 0;
+}
+
+.order4 {
+    order: 4;
+    width: 100%;
+    text-align: center;
+}
+
+.order5 {
+    order: 5;
+    margin: auto;
+}
+
+.order5 p {
+    margin: 0;
 }
 
 .sm-hide {
@@ -563,7 +602,7 @@ body, html {
     width: 61.74px;
     height: 61.74px;
     background: #FFFFFF;
-    box-shadow: 0px 3.2073px 24.0547px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 24px rgba(0, 0, 0, 0.15);
     border-radius: 50%;
 }
 
@@ -571,11 +610,11 @@ body, html {
     width: 55.33px;
     height: 55.33px;
     background: #65C466;
-    box-shadow: 0px 3.2073px 24.0547px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 24px rgba(0, 0, 0, 0.25);
     color: white;
     font-style: normal;
     font-weight: 600;
-    font-size: 6.41459px;
+    font-size: 6px;
     line-height: 8px;
     text-align: center;
     display: flex;
@@ -656,6 +695,10 @@ body, html {
         display: none;
     }
 
+    .card {
+        height: calc(50% - 60px);
+    }
+
     .header {
         padding: 14px 30px;
         font-size: 1.4em;
@@ -715,11 +758,20 @@ body, html {
     }
 
     .big-width {
-        width: 50%;
+        width: 42%;
+    }
+
+    .big-flex > .flex {
+        width: 58%;
     }
 
     .img-phone-block {
         order: 0;
+        margin: auto;
+    }
+
+    .img-phone-block img {
+        width: 230px;
     }
 
     .dis-none {
@@ -727,28 +779,95 @@ body, html {
         margin: auto;
     }
 
-    .footer1 {
-        display: none;
+    .width-div {
+        width: 50%;
+        margin: auto;
     }
 
-    .footer2 {
-        display: flex;
-        justify-content: space-between;
-        background-color: #243246;
-        color: var(--main-text-color1);
-        padding: 20px;
-    }
-
-    .footer2 > div:nth-child(2) {
-        width: 34%;
-    }
 
     .img-pudding {
         padding: 10px 3px 0;
     }
+
+    .order5 p {
+        margin: 11px 0;
+        text-align: left;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .footer {
+        height: 197px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .order1 {
+        order: 3;
+        box-sizing: border-box;
+        width: calc(100%/2);
+        margin-bottom: 0;
+        height: 92px;
+        padding-left: 7%;
+    }
+
+    .h2-column {
+        height: 81px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .order1 h2:first-child,
+    .order1 h2:nth-child(3){
+        width: 120px;
+    }
+
+    .order2 {
+        order: 2;
+        height: 80px;
+        width: calc(100%/4);
+        top: 45px;
+        margin-left: 0;
+    }
+
+    .order3 {
+        order: 5;
+        box-sizing: border-box;
+        padding: 7px 0 0 90px;
+        width: calc(100%/4);
+    }
+
+    .order3 .flex-align-center img {
+        margin: 0 10px 8px 0;
+    }
+
+    .number-p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .order4 {
+        order: 3;
+        width: calc(100%/3);
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .order5 {
+        order: 1;
+        height: 40px;
+        width: calc(100%/4);
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+
+    .card {
+        height: auto;
+    }
+
     .questions_block > .description .p-text-style {
         order: 1;
         width: calc(100% - 65px);
@@ -765,6 +884,14 @@ body, html {
     .header {
         padding: 14px 30px;
         font-size: 1.4em;
+    }
+
+    form > .flex-al {
+        display: block;
+    }
+
+    form .flex-al {
+        justify-content: flex-start;
     }
 
     .block-white-line {
@@ -814,7 +941,10 @@ body, html {
     }
 
     .card-container {
-        height: 211px;
+        justify-content: space-between;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .card {
@@ -826,12 +956,75 @@ body, html {
         order: 2;
     }
 
-    .card:last-child {
-        order: 3;
+    .card:first-child {
+        margin-left: 0;
     }
 
-    .img-phone-block {
-        width: 200px;
+    .card:last-child {
+        order: 3;
+        margin-right: 0;
+    }
+
+    .img-phone-block img {
+        width: 260px;
+    }
+
+    .footer {
+        height: 128px;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .order1 {
+        box-sizing: border-box;
+        width: calc(100%/2);
+        margin-bottom: 0;
+        height: 92px;
+        padding-left: 7%;
+    }
+
+    .h2-column {
+        height: 81px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .order1 h2:first-child,
+    .order1 h2:nth-child(3){
+        width: 120px;
+    }
+
+    .order2 {
+        height: 80px;
+        width: calc(100%/4);
+        top: 45px;
+        margin-left: 0;
+    }
+
+    .order3 {
+        box-sizing: border-box;
+        padding: 7px 0 0 90px;
+        width: calc(100%/4);
+    }
+
+    .order3 .flex-align-center img {
+        margin: 0 10px 8px 0;
+    }
+
+    .number-p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .order4 {
+        margin: 0 auto;
+    }
+
+    .order5 {
+        height: 40px;
+        width: calc(100%/4);
+        margin: 0;
     }
 }
 
