@@ -136,6 +136,35 @@ body, html {
     width: 100%;
 }
 
+.white_circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 61.74px;
+    height: 61.74px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+}
+
+.green_circle {
+    width: 55.33px;
+    height: 55.33px;
+    background: #65C466;
+    box-shadow: 0 3px 24px rgba(0, 0, 0, 0.25);
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6px;
+    line-height: 8px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+}
+
 .form-text {
     box-sizing: border-box;
     width: 100%;
@@ -515,20 +544,6 @@ body, html {
     display: flex;
 }
 
-/*.h2-column:first-child {*/
-/*    width: 40%;*/
-/*}*/
-
-.h2-column {
-
-}
-
-.h2-column h2 {
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
 .number-p {
     font-size: 13px;
     line-height: 14px;
@@ -557,8 +572,25 @@ body, html {
 
 .order1 {
     order: 1;
+    box-sizing: border-box;
     width: 100%;
-    margin-bottom: 20px;
+    height: 121px;
+    margin: 0 0 20px 20px;
+    justify-content: center;
+}
+
+.h2-column {
+    height: 121px;
+    width: 294px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.h2-column h2 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .order2 {
@@ -595,35 +627,6 @@ body, html {
     display: none;
 }
 
-.white_circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 61.74px;
-    height: 61.74px;
-    background: #FFFFFF;
-    box-shadow: 0 3px 24px rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-}
-
-.green_circle {
-    width: 55.33px;
-    height: 55.33px;
-    background: #65C466;
-    box-shadow: 0 3px 24px rgba(0, 0, 0, 0.25);
-    color: white;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 6px;
-    line-height: 8px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 50%;
-}
-
 @media screen and (min-width: 768px) {
     .main-img {
         padding: 40px 10px;
@@ -640,7 +643,7 @@ body, html {
         justify-content: flex-start;
     }
 
-    .questions_block > .description > .p-text-style{
+    .questions_block > .description > .p-text-style {
         margin-top: -20px;
     }
 
@@ -774,9 +777,44 @@ body, html {
         width: 230px;
     }
 
+    .center-sm:before {
+        content: url("../img/leftArrow.png");
+        width: 25px;
+        height: 22px;
+        border: 1px solid var(--main-color);
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: calc(50% - 22px);
+        left: -11px;
+        padding-bottom: 3px;
+    }
+
     .dis-none {
         display: block;
         margin: auto;
+    }
+
+    .center-sm,
+    .dis-none {
+        position: relative;
+    }
+
+    .dis-none:after {
+        content: url("../img/rightArrow.png");
+        width: 25px;
+        height: 22px;
+        border: 1px solid var(--main-color);
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: calc(50% - 22px);
+        right: -11px;
+        padding-bottom: 3px;
     }
 
     .width-div {
@@ -784,20 +822,12 @@ body, html {
         margin: auto;
     }
 
-
     .img-pudding {
         padding: 10px 3px 0;
     }
 
-    .order5 p {
-        margin: 11px 0;
-        text-align: left;
-        font-size: 15px;
-        line-height: 18px;
-    }
-
     .footer {
-        height: 197px;
+        height: 156px;
         flex-direction: column;
         padding: 20px;
     }
@@ -805,28 +835,27 @@ body, html {
     .order1 {
         order: 3;
         box-sizing: border-box;
-        width: calc(100%/2);
+        width: calc(100% / 2);
         margin-bottom: 0;
-        height: 92px;
         padding-left: 7%;
+        justify-content: flex-start;
     }
 
     .h2-column {
-        height: 81px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
     .order1 h2:first-child,
-    .order1 h2:nth-child(3){
+    .order1 h2:nth-child(3) {
         width: 120px;
     }
 
     .order2 {
         order: 2;
         height: 80px;
-        width: calc(100%/4);
+        width: calc(100% / 4);
         top: 45px;
         margin-left: 0;
     }
@@ -834,8 +863,8 @@ body, html {
     .order3 {
         order: 5;
         box-sizing: border-box;
-        padding: 7px 0 0 90px;
-        width: calc(100%/4);
+        padding: 7px 0 0 40px;
+        width: calc(100% / 4);
     }
 
     .order3 .flex-align-center img {
@@ -849,17 +878,24 @@ body, html {
 
     .order4 {
         order: 3;
-        width: calc(100%/3);
+        width: calc(100% / 3);
         text-align: center;
         margin: 0 auto;
     }
 
     .order5 {
         order: 1;
-        height: 40px;
-        width: calc(100%/4);
+        width: calc(100% / 4);
         margin: 0;
     }
+
+    .order5 p {
+        margin: 11px 0;
+        text-align: left;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -977,7 +1013,7 @@ body, html {
 
     .order1 {
         box-sizing: border-box;
-        width: calc(100%/2);
+        width: calc(100% / 2);
         margin-bottom: 0;
         height: 92px;
         padding-left: 7%;
@@ -991,13 +1027,13 @@ body, html {
     }
 
     .order1 h2:first-child,
-    .order1 h2:nth-child(3){
+    .order1 h2:nth-child(3) {
         width: 120px;
     }
 
     .order2 {
         height: 80px;
-        width: calc(100%/4);
+        width: calc(100% / 4);
         top: 45px;
         margin-left: 0;
     }
@@ -1005,7 +1041,7 @@ body, html {
     .order3 {
         box-sizing: border-box;
         padding: 7px 0 0 90px;
-        width: calc(100%/4);
+        width: calc(100% / 4);
     }
 
     .order3 .flex-align-center img {
@@ -1023,7 +1059,7 @@ body, html {
 
     .order5 {
         height: 40px;
-        width: calc(100%/4);
+        width: calc(100% / 4);
         margin: 0;
     }
 }
