@@ -30,6 +30,11 @@ body, html {
     border-radius: var(--main-border-radius);
 }
 
+.header a {
+    text-decoration: none;
+    color: var(--main-text-color1);
+}
+
 .heading {
     font-size: 1.2em;
     font-weight: 500;
@@ -47,6 +52,68 @@ body, html {
 .flex {
     display: flex;
     align-items: center;
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    border-radius: var(--main-border-radius);
+    background-color: var(--main-color);
+    color: var(--main-text-color1);
+    top: 48px;
+    width: 177px;
+    height: 150px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.display-drop-menu {
+    position: relative;
+}
+
+.display-drop-menu:hover .drop-menu {
+    display: block;
+}
+
+.display-drop-menu:hover h2 {
+    color: var(--main-color);
+}
+
+.drop-menu-block {
+    position: relative;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    padding: 5px;
+    border-top: 1px solid var(--main-text-color1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-menu-block:first-child {
+    padding-top: 8px;
+}
+
+.drop-menu-2 {
+    display: none;
+    position: absolute;
+    border-radius: var(--main-border-radius);
+    background-color: var(--main-color);
+    color: var(--main-text-color1);
+    left: 100%;
+    top: 0;
+    width: 213px;
+    height: 99px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.drop-menu-block:hover {
+    background-color: #60A861;
+}
+
+.drop-menu-block:hover .drop-menu-2 {
+    display: block;
 }
 
 .contacts h2 {
@@ -359,6 +426,7 @@ body, html {
 .card-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .card {
@@ -754,6 +822,7 @@ body, html {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        align-items: flex-start;
     }
 
     .big-flex {
@@ -1227,6 +1296,12 @@ body, html {
     .services2 {
         width: 437px;
         height: 657px;
+    }
+
+    .services1,
+    .services2,
+    .services3 {
+        padding: 45px;
     }
 
     .white-h2 {
