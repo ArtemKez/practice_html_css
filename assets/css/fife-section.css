@@ -1,0 +1,130 @@
+.h1-text-color {
+    margin: 20px 0;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.flex-height-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-height-center img {
+    width: 77%;
+    padding: 10px 0;
+}
+
+.flex-height-center > .img-width {
+    width: 18%;
+}
+
+.circle {
+    height: 9px;
+    width: 9px;
+    min-width: 9px;
+    min-height: 9px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    margin: 10px 10px 10px 0;
+}
+
+.p-color {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.img-phone-block {
+    order: 2;
+}
+
+.img-phone-block img {
+    width: 168px;
+}
+
+.block-width {
+    width: 100%;
+    min-width: 160px;
+    max-width: 260px;
+}
+
+.form-input {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    padding: 9px 0;
+}
+
+.form-input input {
+    padding: 10px 4px 10px 20px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.form-input label {
+    color: #A9A9A9;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.form-input img {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    bottom: 20px;
+    left: 0;
+}
+
+.small-p-style {
+    color: lightgrey;
+    font-size: 8px;
+    text-align: center;
+}
+
+.small-p-style a {
+    color: black;
+}
+
+@media screen and (min-width: 768px) {
+    .big-width {
+        width: 42%;
+    }
+
+    .img-phone-block {
+        order: 0;
+        margin: auto;
+    }
+
+    .img-phone-block img {
+        width: 230px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .img-phone-block img {
+        width: 260px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .img-phone-block {
+        width: 300px;
+    }
+
+    .block-width {
+        width: 100%;
+        min-width: 160px;
+        max-width: 300px;
+    }
+
+    .small-p-style {
+        font-size: 9px;
+    }
+}

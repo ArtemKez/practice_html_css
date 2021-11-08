@@ -1,0 +1,214 @@
+.align-center {
+    text-align: center;
+}
+.flex-center {
+     display: flex;
+     justify-content: center;
+ }
+
+.height-center {
+    display: flex;
+    align-items: center;
+}
+
+.height-center > img {
+    width: 30px;
+}
+
+.height-center {
+     display: none;
+ }
+
+.cards_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+}
+
+.services1,
+.services3 {
+    width: 171px;
+    height: 254px;
+    background-image: url("../img/building.png");
+}
+
+.services1,
+.services2,
+.services3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-sizing: border-box;
+    border-radius: var(--main-border-radius);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 16px;
+    margin: 0 15px;
+}
+
+.services1,
+.services3 {
+    display: none;
+}
+
+.services2 {
+    width: 190px;
+    height: 286px;
+    background-image: url("../img/repair-of-equipment.png");
+}
+
+.services3 {
+    background-image: url("../img/english-courses.png");
+}
+
+.white-h2 {
+    color: var(--main-text-color1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.center-white-p,
+.white-p {
+    color: var(--main-text-color1);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.center-white-p {
+    text-align: center;
+}
+
+.line-block {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.line {
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: lightgrey;
+}
+
+.line:first-child {
+    background-color: var(--main-color);
+}
+
+.flex-center1{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center1 img {
+    margin: 0 10px;
+}
+
+.flex-center1 img {
+    width: 30px;
+}
+@media screen and (min-width: 768px) {
+    .height-center {
+        display: flex;
+    }
+
+    .height-center > img {
+        width: 35px;
+    }
+
+    .services1,
+    .services3 {
+        display: flex;
+    }
+
+    .line {
+        height: 4px;
+    }
+
+    .flex-center1 {
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .services1,
+    .services3 {
+        width: 228px;
+        height: 339px;
+    }
+
+    .services2 {
+        width: 253px;
+        height: 380px;
+    }
+
+    .line {
+        height: 5px;
+    }
+}
+@media screen and (min-width: 1336px) {
+    .height-center > img {
+        width: 40px;
+    }
+
+    .services1,
+    .services3 {
+        width: 276px;
+        height: 412px;
+    }
+
+    .services2 {
+        width: 307px;
+        height: 462px;
+    }
+
+    .line {
+        margin-top: 10px;
+        height: 6px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .height-center > img {
+        width: 60px;
+    }
+
+    .services1,
+    .services3 {
+        width: 393px;
+        height: 585px;
+    }
+
+    .services2 {
+        width: 437px;
+        height: 657px;
+    }
+
+    .services1,
+    .services2,
+    .services3 {
+        padding: 45px;
+    }
+
+    .white-h2 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .center-white-p,
+    .white-p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .line-block {
+        width: 300px;
+    }
+
+    .line {
+        width: 34px;
+    }
+}

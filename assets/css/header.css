@@ -88,6 +88,7 @@
     margin: 3px 0;
     background-color: white;
 }
+
 @media screen and (min-width: 768px) {
     .header {
         padding: 14px 30px;
@@ -107,8 +108,18 @@
         width: 30px;
         margin: 3.5px 0;
     }
+
+    .big-flex {
+        display: flex;
+    }
 }
+
 @media screen and (min-width: 1024px) {
+    .header {
+        padding: 14px 30px;
+        font-size: 1.4em;
+    }
+
     .contacts {
         display: flex;
         align-items: center;
@@ -124,7 +135,13 @@
         display: none;
     }
 }
+
 @media screen and (min-width: 1336px) {
+    .header {
+        padding: 20px 40px;
+        font-size: 1.8em;
+    }
+
     .flex > img {
         padding-left: 8px;
         width: 17px;
@@ -135,7 +152,13 @@
         margin: 0 25px;
     }
 }
+
 @media screen and (min-width: 1920px) {
+    .header {
+        padding: 25px 60px;
+        font-size: 1.9em;
+    }
+
     .heading {
         font-size: 1.4em;
     }
