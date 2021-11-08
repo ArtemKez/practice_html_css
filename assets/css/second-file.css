@@ -1,0 +1,75 @@
+.img-background {
+    background-image: url("../img/writing-hands.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 231px;
+    position: relative;
+}
+
+.green-block {
+    clip-path: polygon(0 0, 40% 0, 80% 100%, 0% 100%);
+    height: 100%;
+    background-color: rgba(57, 154, 55, 0.5);
+}
+
+.white-block {
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 231px;
+    height: 134px;
+    top: 50%;
+    transform: translateY(-30%);
+    left: 25px;
+    background-color: var(--main-text-color1);
+    border-radius: var(--main-border-radius);
+}
+
+.white-block h1 {
+    margin: 0;
+    line-height: 24px;
+}
+
+.white-block p {
+    margin: 4px;
+}
+
+.btn-center {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .img-background {
+        height: 164px;
+    }
+
+    .white-block {
+        transform: translateY(-49%);
+        width: 311px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+}
+
+.btn-center {
+    text-align: left;
+}
+@media screen and (min-width: 1920px) {
+    .img-background {
+        height: 210px;
+    }
+
+    .white-block {
+        width: 360px;
+    }
+
+    .white-block h1 {
+        line-height: 26px;
+    }
+
+    .white-block p {
+        margin: 6px;
+    }
+}
