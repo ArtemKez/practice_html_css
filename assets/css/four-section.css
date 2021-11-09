@@ -7,10 +7,10 @@
 .card {
     width: calc(50% - 80px);
     min-width: 220px;
-    border: 1px solid lightgray;
-    border-radius: var(--main-border-radius);
     margin: 15px 30px;
     padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: var(--main-border-radius);
 }
 
 .card:hover {
@@ -41,8 +41,8 @@
 
 @media screen and (min-width: 768px) {
     .card-container {
-        height: 423px;
         display: flex;
+        height: 423px;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -79,8 +79,8 @@
     }
 
     .card:last-child {
-        order: 3;
         margin-right: 0;
+        order: 3;
     }
 }
 

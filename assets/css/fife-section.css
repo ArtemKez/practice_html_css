@@ -28,9 +28,9 @@
     width: 9px;
     min-width: 9px;
     min-height: 9px;
+    margin: 10px 10px 10px 0;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    margin: 10px 10px 10px 0;
 }
 
 .p-color {
@@ -55,9 +55,9 @@
 .form-input {
     display: flex;
     width: 100%;
+    padding: 9px 0;
     flex-direction: column;
     position: relative;
-    padding: 9px 0;
 }
 
 .form-input input {
@@ -75,9 +75,9 @@
 }
 
 .form-input img {
-    position: absolute;
     height: 16px;
     width: 16px;
+    position: absolute;
     bottom: 20px;
     left: 0;
 }
@@ -98,8 +98,8 @@
     }
 
     .img-phone-block {
-        order: 0;
         margin: auto;
+        order: 0;
     }
 
     .img-phone-block img {
